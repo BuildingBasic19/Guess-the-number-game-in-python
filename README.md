@@ -1,8 +1,8 @@
 # Guess the Number Game
 
-A simple command-line game developed in Java where the computer randomly selects a number, and the player attempts to guess it. After each guess, the program provides feedback indicating whether the guess is too high or too low until the correct number is found.
+A simple command-line game developed in Python where the computer randomly selects a number, and the player attempts to guess it. After each guess, the program provides feedback indicating whether the guess is too high or too low until the correct number is found.
 
-This project was built to practice Java programming fundamentals, loops, conditional statements, user input, and random number generation.
+This project was built to practice Python programming fundamentals, loops, conditional statements, user input, and random number generation.
 
 ## Features
 
@@ -14,7 +14,7 @@ This project was built to practice Java programming fundamentals, loops, conditi
 
 ## Technologies Used
 
-* Java
+* Python
 * Scanner Class
 * Random Class
 * Loops
@@ -25,7 +25,7 @@ This project was built to practice Java programming fundamentals, loops, conditi
 
 ```text
 Guess-The-Number/
-│── GuessTheNumber.java
+│── GuessTheNumber.Python
 └── README.md
 ```
 
@@ -46,13 +46,13 @@ cd guess-the-number
 3. Compile the program.
 
 ```bash
-javac GuessTheNumber.java
+Pythonc GuessTheNumber.Python
 ```
 
 4. Run the program.
 
 ```bash
-java GuessTheNumber
+Python GuessTheNumber
 ```
 
 ## Sample Output
@@ -87,7 +87,7 @@ This project helped me practice:
 * Limit the number of attempts
 * High score tracking
 * Play Again option
-* Graphical User Interface (GUI) using Java Swing or JavaFX
+* Graphical User Interface (GUI) using Python Swing or PythonFX
 
 ## Author
 
