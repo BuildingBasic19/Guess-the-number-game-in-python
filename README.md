@@ -1,37 +1,41 @@
-# Guess the Number Game
+# Guess the Number Game (Python)
 
-A simple command-line game developed in Python where the computer randomly selects a number, and the player attempts to guess it. After each guess, the program provides feedback indicating whether the guess is too high or too low until the correct number is found.
+A simple command-line game built with Python where the computer randomly selects a number between **1 and 100**, and the player has **8 attempts** to guess it.
 
-This project was built to practice Python programming fundamentals, loops, conditional statements, user input, and random number generation.
+After each guess, the game provides a hint:
+
+* **UP** – if the guessed number is lower than the secret number.
+* **DOWN** – if the guessed number is higher than the secret number.
+
+This project was created to practice Python fundamentals, user input, loops, functions, conditional statements, and random number generation.
 
 ## Features
 
-* Randomly generates a secret number
-* Accepts user input through the terminal
-* Provides hints ("Too High" or "Too Low")
-* Counts the number of attempts
-* Displays a congratulatory message when the correct number is guessed
+* Random number generation between **1 and 100**
+* Maximum of **8 guessing attempts**
+* Hints after every incorrect guess
+* Displays remaining chances
+* Reveals the correct number after the game ends
 
 ## Technologies Used
 
-* Python
-* Scanner Class
-* Random Class
+* Python 3
+* `random` module
+* Functions
 * Loops
 * Conditional Statements
-* Methods (if implemented)
 
 ## Project Structure
 
 ```text
 Guess-The-Number/
-│── GuessTheNumber.Python
+│── guess_the_number.py
 └── README.md
 ```
 
 ## How to Run
 
-1. Clone the repository.
+1. Clone this repository.
 
 ```bash
 git clone https://github.com/your-username/guess-the-number.git
@@ -43,51 +47,50 @@ git clone https://github.com/your-username/guess-the-number.git
 cd guess-the-number
 ```
 
-3. Compile the program.
+3. Run the program.
 
 ```bash
-Pythonc GuessTheNumber.Python
-```
-
-4. Run the program.
-
-```bash
-Python GuessTheNumber
+python guess_the_number.py
 ```
 
 ## Sample Output
 
 ```text
-Welcome to Guess the Number!
+Welcome to the Guess the Number game!
+I have selected a number between 1 and 100. Try to guess it!
+You have 8 attempts to guess the number.
 
-Guess a number between 1 and 100: 45
-Too Low!
+Enter your guess: 40
+7 Chance left
+UP
 
-Guess a number between 1 and 100: 72
-Too High!
+Enter your guess: 80
+6 Chance left
+DOWN
 
-Guess a number between 1 and 100: 61
-Congratulations! You guessed the correct number in 3 attempts.
+Enter your guess: 63
+Your guess was correct
 ```
 
-## Learning Outcomes
+## What I Learned
 
-This project helped me practice:
+While building this project, I practiced:
 
-* User input using `Scanner`
-* Random number generation using `Random`
-* Loops (`while` / `do-while`)
-* Conditional statements (`if-else`)
-* Variables and basic program logic
-* Building an interactive command-line application
+* Using the `random` module
+* Writing and calling functions
+* Working with loops
+* Using conditional statements
+* Taking user input
+* Building an interactive command-line game
 
 ## Future Improvements
 
-* Add difficulty levels (Easy, Medium, Hard)
-* Limit the number of attempts
-* High score tracking
-* Play Again option
-* Graphical User Interface (GUI) using Python Swing or PythonFX
+* End the game immediately after the correct guess.
+* Validate user input to prevent crashes for non-numeric input.
+* Add difficulty levels (Easy, Medium, Hard).
+* Allow the player to play multiple rounds.
+* Maintain a high-score system based on the fewest attempts.
+* Display the total number of attempts used.
 
 ## Author
 
